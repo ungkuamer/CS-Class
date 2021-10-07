@@ -1,8 +1,8 @@
 queue = [None]*5
 front = 0
 rear = -1
-up = 5
-queueful = 5
+up = 4
+queueful = 4
 queueLen = 0
 
 def enqueue(item):
@@ -33,7 +33,7 @@ def dequeue():
         else:
             front += 1
 
-    queueLen +- 1
+    queueLen -= 1
 
 enqueue(15)
 enqueue(45)
