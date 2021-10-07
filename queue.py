@@ -14,11 +14,13 @@ def enqueue(item):
         else:
             rear = 0
 
+        queueLen += 1
+        queue[rear] = item
+
     else:
         print('Queue is full, cannot enqueue')
 
-    queueLen += 1
-    queue[rear] = item
+    
 
 def dequeue():
     global queue,front,rear,up,queueful,queueLen
@@ -39,5 +41,9 @@ enqueue(15)
 enqueue(45)
 dequeue()
 dequeue()
-enqueue(4)
+dequeue()
+for i in range(1,6):
+    enqueue(i)
+
+enqueue(7)
 print(queue)
