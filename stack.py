@@ -25,14 +25,5 @@ def pop():
         stack[top] = None
         top -= 1
 
-push(7)
-push(32)
-pop()
-pop()
-
-for i in range(1,11):
-    push(i)
-
-push(11)
 
 print(stack)
