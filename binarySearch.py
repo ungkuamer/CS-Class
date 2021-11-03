@@ -3,8 +3,7 @@ highest = 9
 lowest = 0
 found = False
 
-item = input('Please enter item to be found: ')
-item = int(item)
+item = int(input('Please enter item to be found: '))
 
 while found == False and lowest <= highest:
     index = int((highest+lowest)/2)
