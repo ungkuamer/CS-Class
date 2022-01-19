@@ -1,5 +1,13 @@
 """
 Repair line 20,31 on the initialization of new savings and current account
+
+Problems:
+- How to set account holder name after saving/current account is initialize
+ 
+Solutions:
+- Repair subclass account initialization
+- Fix during new account instances at end of code
+
 """
 
 import random
@@ -33,7 +41,7 @@ class PersonalAccount:
 
 class SavingsAccount:
     def __init__(self, holderName=None, IBAN=None):
-        BankAccount.createNewAccount() 3 # <---- Here
+        BankAccount.createNewAccount() # <---- Here
         self.__accBalance = random.randint(0, 20000)
         self.__interestRate = random()
 
