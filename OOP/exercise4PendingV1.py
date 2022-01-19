@@ -1,5 +1,6 @@
 """
-Repair line 20,31 on the initialization of new savings and current account
+-Repair line 20,31 on the initialization of new savings and current account
+-Add method calculateInterest to savingsAccount class
 
 Problems:
 - How to set account holder name after saving/current account is initialize
